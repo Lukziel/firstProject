@@ -14,6 +14,8 @@ public class MainPage {
     @FindBy(linkText = "Broken Images")
     WebElement brokenImagesLink;
 
+    @FindBy(linkText = "Challenging DOM")
+    WebElement challengingDomLink;
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
@@ -26,6 +28,9 @@ public class MainPage {
 
     public void goToBrokenImage() {
         brokenImagesLink.click();
+    }
+    public void goToChallengingDom() {
+        challengingDomLink.click();
     }
 
 
