@@ -9,7 +9,8 @@ public class TestBase {
     MainPage mainPage;
     BasicAuth basicAuth;
     BrokenImages brokenImages;
-    ChallengingDom challengingDom;
+    // ChallengingDom challengingDom;
+    Checkboxes checkboxes;
 
     @Before
     public void setup() {
@@ -18,7 +19,9 @@ public class TestBase {
         mainPage = new MainPage(driver);
         basicAuth = new BasicAuth(driver);
         brokenImages = new BrokenImages(driver);
-        challengingDom = new ChallengingDom(driver);
+        // challengingDom = new ChallengingDom(driver);
+        checkboxes = new Checkboxes(driver);
+
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.get("http://admin:admin@the-internet.herokuapp.com/");
